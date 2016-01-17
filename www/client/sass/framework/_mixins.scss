@@ -1,0 +1,60 @@
+
+@mixin font-color-elements($cl){
+  &, i, p, b, h1, h2, h3, h4, h5, h6{
+    color: $cl;
+    &:hover, &:focus{ color: $cl; }
+  }
+}
+
+@mixin font-color($cl){
+  color: $cl;
+  &:hover, &:focus{ color: $cl; }
+}
+
+@mixin darken-color($cl){
+  background: $cl;
+  &:hover, &:focus{
+    background: darken($cl, 10%);
+  }
+}
+
+@mixin color-dark($bg: $section-color-dark, $cl: $font-light){
+  @include font-color-elements($cl);
+  background: $bg;
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin svg-classes($cl){
+
+  .svg-image{
+    display: inline-block;
+    width: 55px;
+    height : 25px;
+    background-size: 55px;
+    background-repeat: no-repeat;
+  }
+
+  @for $i from 1 through 3{
+    .level#{$i}{
+      background-image: url("../images/level#{$i}.svg");
+    }
+  }
+}
+
+@mixin svg-classes-colors($cl){
+  @for $i from 1 through 5{
+    .class#{$i}{
+      display: inline-block;
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: shade(tint($cl, 20%), ($i * 7) * 1%);
+    }
+  }
+}

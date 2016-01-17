@@ -1,0 +1,76 @@
+//******* RESPONSIVE HELPERS *******/
+$query-size-s-min   : 520px;
+$query-size-s-max   : 767px;
+
+$query-size-sm-min  : $query-size-s-max + 1px;
+$query-size-sm-max  : 991px;
+
+$query-size-m-min   : $query-size-sm-max + 1px;
+$query-size-m-max   : 1199px;
+
+$query-size-l-min   : $query-size-m-max + 1px;
+
+// Builded queries. Use: @media #{$sm-min} { ... }
+$query-range-s  : "only screen (min-width: #{$query-size-s-min}))";
+$query-range-sm : "only screen (min-width: #{$query-size-sm-min}))";
+$query-range-m  : "only screen (min-width: #{$query-size-m-min}))";
+$query-range-l  : "only screen and (min-width:#{$query-size-l-min})";
+
+// Builded range queries. Use: @media #{$sm-min} { ... }
+$query-range-s  : "only screen (min-width: #{$query-size-s-min}) and (max-width:#{$query-size-s-max})";
+$query-range-sm : "only screen (min-width: #{$query-size-sm-min}) and (max-width:#{$query-size-sm-max})";
+$query-range-m  : "only screen (min-width: #{$query-size-m-min}) and (max-width:#{$query-size-m-max})";
+$query-range-l  : "only screen and (min-width:#{$query-size-l-min})";
+
+
+
+//******* COLORS (general) ********/
+$color-primary        : #4b2;
+$color-complementary  : #d71;
+
+
+
+//******* BLOCK ELEMENTS ********/
+$container-width        : 100%;
+$container-max-width-m  : 900px;
+$container-max-width-l  : 1000px;
+
+$section-width        : 100%;
+$section-padding      : 15px;
+$section-color-light  : #ddd;
+$section-color-dark   : #444;
+
+$article-width        : 100%;
+$article-padding      : 15px;
+$article-color-light  : #fff;
+$article-color-dark   : #444;
+
+
+
+//******* NAVBAR ********/
+
+
+
+//******* FONTS ********/
+$font-family            :  "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif      :   Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace  :   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+$font-size    : 16px;
+$font-light   : #fff;
+$font-dark    : #444;
+
+$h1-font  : 44px;
+$h2-font  : 34px;
+$h3-font  : 28px;
+$h4-font  : 22px;
+$h5-font  : 18px;
+$h6-font  : 15px;
+
+
+//****** FANCY STUFF *******/
+$article-shadow: 0 1px 2px #aaa;
+
+
+
+

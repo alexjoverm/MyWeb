@@ -1,0 +1,30 @@
+
+#main-page{
+  padding-top: 50px;
+}
+
+
+.section {
+  padding : 10px 0;
+
+  h2 {
+    margin-bottom : 20px;
+    line-height: 1;
+  }
+}
+
+.section-initial {
+  @include font-color-elements($font-light);
+  background : $color-primary;
+
+  h1 {
+    text-align : center;
+  }
+}
+
+.section-inverse {
+  @include color-dark;
+}
+
+
+@include svg-classes($color-primary);
